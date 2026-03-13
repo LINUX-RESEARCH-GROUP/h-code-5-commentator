@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H-CODE 5 COMMENTATOR | CRUSH YOUR NAIVE IDEAS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;900&family=Noto+Sans+JP:wght@400;900&display=swap');
+        
+        :root {
+            --hazard-yellow: #fde047; /* 警告イエロー */
+            --hazard-black: #000000;
+            --alert-red: #ef4444;
+        }
+
+        body {
+            background-color: var(--hazard-black);
+            color: var(--hazard-yellow);
+            font-family: 'Inter', 'Noto Sans JP', sans-serif;
+            margin: 0;
+            overflow-x: hidden;
+        }
+
+        .anton { font-family: 'Anton', sans-serif; }
+
+        .hazard-stripe {
+            background: repeating-linear-gradient(
+                45deg,
+                var(--hazard-yellow),
+                var(--hazard-yellow) 20px,
+                var(--hazard-black) 20px,
+                var(--hazard-black) 40px
+            );
+            height: 20px;
+            width: 100%;
+        }
+
+        .btn-trial {
+            background-color: var(--hazard-yellow);
+            color: var(--hazard-black);
+            padding: 20px 50px;
+            font-weight: 900;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            transition: all 0.1s ease;
+            display: inline-block;
+            border: 4px solid var(--hazard-yellow);
+        }
+
+        .btn-trial:hover {
+            background-color: var(--hazard-black);
+            color: var(--hazard-yellow);
+            box-shadow: 0 0 30px var(--hazard-yellow);
+            transform: scale(1.05);
+        }
+
+        .card-critic {
+            border: 2px solid var(--hazard-yellow);
+            padding: 30px;
+            background: rgba(253, 224, 71, 0.05);
+            position: relative;
+        }
+
+        .shaking {
+            animation: shake 0.5s infinite;
+        }
+        @keyframes shake {
+            0% { transform: translate(1px, 1px) rotate(0deg); }
+            10% { transform: translate(-1px, -2px) rotate(-1deg); }
+            20% { transform: translate(-3px, 0px) rotate(1deg); }
+            30% { transform: translate(3px, 2px) rotate(0deg); }
+            40% { transform: translate(1px, -1px) rotate(1deg); }
+            50% { transform: translate(-1px, 2px) rotate(-1deg); }
+            60% { transform: translate(-3px, 1px) rotate(0deg); }
+            70% { transform: translate(3px, 1px) rotate(-1deg); }
+            80% { transform: translate(-1px, -1px) rotate(1deg); }
+            90% { transform: translate(1px, 2px) rotate(0deg); }
+            100% { transform: translate(1px, -2px) rotate(-1deg); }
+        }
+
+        .glitch-text { text-shadow: 2px 0 var(--alert-red), -2px 0 #00fff9; }
+    </style>
+</head>
+<body class="p-0">
+
+    <div class="hazard-stripe"></div>
+
+    <main class="min-h-screen flex flex-col items-center justify-center p-6 md:p-24 text-center">
+        
+        <header class="mb-20">
+            <p class="text-sm font-black tracking-[0.5em] mb-4 uppercase">>>> WARNING: HIGH VOLTAGE INTELLECT</p>
+            <h1 class="anton text-7xl md:text-9xl mb-8 leading-none glitch-text">H-CODE 5<br>COMMENTATOR</h1>
+            <p class="text-xl md:text-3xl max-w-3xl font-black italic bg-yellow-400 text-black px-4 py-2 inline-block">
+                優しさは、ビジネスを殺す。
+            </p>
+        </header>
+
+        <section class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 mb-32 text-left">
+            <div class="card-critic">
+                <div class="absolute -top-4 -left-4 bg-red-600 text-white font-bold px-3 py-1 text-xs">CRISIS</div>
+                <h2 class="text-2xl font-black mb-4 uppercase">なぜ「5」が必要か？</h2>
+                <p class="text-sm leading-relaxed opacity-80">
+                    成功（8）の前に、必ず試練（5）がある。多くのビジネスが失敗するのは、本物の「5」を経験せずに「4（安定）」を求めてしまうからだ。このGemは、あなたのアイデアを完膚なきまでに叩き潰し、脆い部分をあぶり出す。
+                </p>
+            </div>
+
+            <div class="card-critic">
+                <div class="absolute -top-4 -left-4 bg-yellow-600 text-black font-bold px-3 py-1 text-xs">LOGIC</div>
+                <h2 class="text-2xl font-black mb-4 uppercase">先に怒られようキッド</h2>
+                <p class="text-sm leading-relaxed opacity-80">
+                    市場（A世界）で血を流す前に、仮想（B世界）で怒鳴られろ。ドクターひろしが設計した「試練の人格」は、あなたの妥協を一切許さない。冷徹な分析こそが、最強の鎧（H-CORE）を創り出す。
+                </p>
+            </div>
+        </section>
+
+        <section class="mb-40">
+            <h2 class="text-xs font-bold uppercase tracking-widest mb-10 opacity-50">Trial Commencement</h2>
+            <a href="https://gemini.google.com/gem/1UmyO34iG_n8HZPK4dMneCwvMel5WJG6u?usp=sharing" class="btn-trial anton" target="_blank">
+                Activate the Crisis
+            </a>
+            <p class="mt-8 text-sm font-bold animate-pulse text-red-500">※ メンタルが弱い方は使用しないでください。</p>
+        </section>
+
+        <!-- FOOTER LINKS -->
+        <div class="flex space-x-8 text-[10px] uppercase font-bold tracking-widest opacity-40">
+            <a href="https://linux-research-group.github.io/lcp-web-construction/" class="hover:text-white underline">LCP HQ</a>
+            <a href="https://linux-research-group.github.io/lcp-web-construction/order.html" class="hover:text-white underline">Order Guide</a>
+            <a href="https://linux-research-group.github.io/lcp-web-construction/sitemap.html" class="hover:text-white underline">System Index</a>
+        </div>
+
+    </main>
+
+    <div class="hazard-stripe fixed bottom-0"></div>
+
+    <footer class="fixed bottom-8 right-8 opacity-20 text-[10px] font-bold text-right uppercase">
+        &copy; 2026 LINUX-RESEARCH-GROUP // DESIGN BY DR. HIROSHI
+    </footer>
+
+</body>
+</html>
